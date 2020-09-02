@@ -1,0 +1,6 @@
+.ionide/
+.vs/
+.idea/
+bin
+obj
+packages
