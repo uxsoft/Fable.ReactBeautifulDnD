@@ -1,4 +1,4 @@
-namespace Fable.BizCharts
+namespace Fable.ReactBeautifulDnD
 
 // yarn add react-beautiful-dnd
 

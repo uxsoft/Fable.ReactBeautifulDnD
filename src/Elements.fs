@@ -1,4 +1,4 @@
-namespace Fable.BizCharts
+namespace Fable.ReactBeautifulDnD
 
 open Browser.Types
 open Fable.Core
