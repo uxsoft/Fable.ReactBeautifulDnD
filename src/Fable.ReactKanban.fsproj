@@ -7,6 +7,7 @@
     <PackageProjectUrl>https://github.com/uxsoft/Fable.BizCharts</PackageProjectUrl>
     <PackageIcon>icon.png</PackageIcon>
     <RepositoryUrl>https://github.com/uxsoft/Fable.BizCharts</RepositoryUrl>
+    <RootNamespace>Fable.ReactBeautifulDnD</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Core.fs" />
