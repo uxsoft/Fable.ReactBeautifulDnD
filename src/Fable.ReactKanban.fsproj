@@ -3,15 +3,15 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>uxsoft</Authors>
-    <Description>Fable bindings for BizCharts</Description>
-    <PackageProjectUrl>https://github.com/uxsoft/Fable.BizCharts</PackageProjectUrl>
+    <Description>Fable bindings for React Kanban</Description>
+    <PackageProjectUrl>https://github.com/uxsoft/Fable.ReactKanban</PackageProjectUrl>
     <PackageIcon>icon.png</PackageIcon>
-    <RepositoryUrl>https://github.com/uxsoft/Fable.BizCharts</RepositoryUrl>
+    <RepositoryUrl>https://github.com/uxsoft/Fable.ReactKanban</RepositoryUrl>
     <RootNamespace>Fable.ReactBeautifulDnD</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Core.fs" />
-    <Compile Include="Elements.fs" />
+    <Compile Include="Kanban.fs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".\icon.png">
