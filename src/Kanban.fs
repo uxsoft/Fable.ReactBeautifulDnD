@@ -6,8 +6,8 @@ open Fable.React
 type KanbanBoard<'TBoard, 'TColumn, 'TCard>() =
     inherit KanbanElement<KanbanBoard<'TBoard, 'TColumn, 'TCard>>(ofImport "default" "@lourenci/react-kanban")
     member x.initialBoard (v: 'TBoard) = x.attribute "initialBoard" v
-    member x.onCardDragEnd (v: Func<'TBoard, 'TCard, {| fromColumnId: int; fromPosition: int |}, {| toColumnId: int; toPosition: int |}, unit>) = x.attribute "onCardDragEnd" v
-    member x.onColumnDragEnd (v: Func<'TBoard, 'TColumn, {| fromPosition: int |}, {| toPosition: int |}, unit>) = x.attribute "onColumnDragEnd" v
+    member x.onCardDragEnd (v: Func<'TCard, {| fromColumnId: int; fromPosition: int |}, {| toColumnId: int; toPosition: int |}, unit>) = x.attribute "onCardDragEnd" v
+    member x.onColumnDragEnd (v: Func<'TColumn, {| fromPosition: int |}, {| toPosition: int |}, unit>) = x.attribute "onColumnDragEnd" v
     member x.renderCard (v: Func<'TCard, obj, ReactElement>) = x.attribute "renderCard" v
     member x.renderColumnHeader (v: Func<'TColumn, {| removeColumn: unit -> unit; renameColumn: string -> unit; addCard: 'TCard -> unit |}, ReactElement>) = x.attribute "renderColumnHeader" v
     member x.allowAddColumn (?v: bool) = x.attribute "allowAddColumn" (Option.defaultValue true v)
