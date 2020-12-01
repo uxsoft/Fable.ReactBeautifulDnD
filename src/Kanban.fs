@@ -26,4 +26,4 @@ type KanbanBoard<'TBoard, 'TColumn, 'TCard>() =
     member x.onCardNew (v: Func<'TCard, 'TCard>) = x.attribute "onCardNew" v
     member x.onNewCardConfirm (v: Func<'TCard, 'TCard>) = x.attribute "onNewCardConfirm" v
     
-    member x.Item with get (children: 'TBoard) = (ofImport "default" "@lourenci/react-kanban") x.JSON (children :> obj :?> ReactElement seq)
+    member x.children (v: 'TBoard) = x.attribute "children" v
